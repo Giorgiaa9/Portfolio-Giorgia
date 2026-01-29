@@ -1,18 +1,36 @@
 
+.body {
+  background-color: #eee7d1;
+}
 
 
+.form-label{
+ font-family: "Outfit", sans-serif;
+ color: #b2cdff;
+ letter-spacing: 0,8em;
+}
+
+.placeholder {
+  font-family: "Outfit", sans-serif;
 
 
+}
+
+.nav-link:hover {
+  
+  color: #3d210e;;
+ 
+}
 
 .custom-navbar {
   background: transparent;
 }
 
 .nav-link {
-  color: #3d210e;
+  color: #b2cdff;
   font-weight: 400;
   margin-left: 1rem;
-  font-family: ;
+  font-family: "Outfit", sans-serif ;
 }
 
 .navbar-toggler {
@@ -23,8 +41,52 @@
   padding-left: 50px;
   padding-right: 50px;
 
+ 
+}
+
+.pagina-contatti {
+  
+  
+  padding-top: clamp(100px, 0vh, 240px);
+  padding-left: 50px;
+  
+
 
 
 
 
 }
+
+.title {
+  font-family:  "Climate Crisis", sans-serif;
+  font-size: clamp(3rem, 8vw, 6rem);
+  color: #b2cdff;
+  font-size: clamp(2.5rem, 10vw, 6rem);
+  position: relative;
+  padding-top: clamp(120px, 20vh, 260px)
+}
+
+
+.corsivo {
+  font-family: "La Belle Aurore", cursive;
+  position: absolute;
+  bottom: 2px;        
+  right: 20%; 
+  transform: translate(-10%, 45%);
+  color: #3d210e;
+
+  z-index: 2;
+  pointer-events: none;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+.red {
+  background-color: var(--red);
+}
+
+
+h1 {
+
+    font-family:  "Climate Crisis", sans-serif;
+    color: #3d210e;
+   }
