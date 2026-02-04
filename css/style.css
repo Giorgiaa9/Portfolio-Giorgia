@@ -1,13 +1,18 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
 
 .body {
   background-color: #eee7d1;
 }
 
 
-.form-label{
- font-family: "Outfit", sans-serif;
- color: #b2cdff;
- letter-spacing: 0,8em;
+.form-label {
+  font-family: "Outfit", sans-serif;
+  color: #b2cdff;
+  letter-spacing: 0, 8em;
 }
 
 .placeholder {
@@ -17,9 +22,10 @@
 }
 
 .nav-link:hover {
-  
-  color: #3d210e;;
- 
+
+  color: #3d210e;
+  ;
+
 }
 
 .custom-navbar {
@@ -30,48 +36,53 @@
   color: #b2cdff;
   font-weight: 400;
   margin-left: 1rem;
-  font-family: "Outfit", sans-serif ;
+  font-family: "Outfit", sans-serif;
 }
 
 .navbar-toggler {
-  border-color: rgba(255,255,255,0.3);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+
+.pagina-contatti {
+  padding-top: clamp(100px, 0vh, 240px);
+  padding-left: 50px
+}
+
+.presentazione {
+  padding-top: 200px;
+  background-color: #b2cdff;
+  padding-bottom: 200px;
+
 }
 
 .custom {
-  padding-left: 50px;
-  padding-right: 50px;
-
- 
-}
-
-.pagina-contatti {
-  
-  
-  padding-top: clamp(100px, 0vh, 240px);
-  padding-left: 50px;
-  
-
-
-
-
+  width: 350px;
 
 }
+
+.contattami {
+  font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+
+}
+
 
 .title {
-  font-family:  "Climate Crisis", sans-serif;
+  font-family: "Climate Crisis", sans-serif;
   font-size: clamp(3rem, 8vw, 6rem);
   color: #b2cdff;
   font-size: clamp(2.5rem, 10vw, 6rem);
   position: relative;
-  padding-top: clamp(120px, 20vh, 260px)
+  padding-top: clamp(120px, 20vh, 260px);
+
 }
 
 
 .corsivo {
   font-family: "La Belle Aurore", cursive;
   position: absolute;
-  bottom: 2px;        
-  right: 20%; 
+  bottom: 2px;
+  right: 20%;
   transform: translate(-10%, 45%);
   color: #3d210e;
 
@@ -80,13 +91,125 @@
   font-size: clamp(2.5rem, 5vw, 4rem);
 }
 
-.red {
-  background-color: var(--red);
+.marrone {
+  font-family: "La Belle Aurore", cursive;
+  line-height: 1;
+  color: #3d210e;
+  font-size: clamp(6rem, 5vw, 7.5rem);
 }
+
+.footer {
+  font-family:"Outfit", sans-serif;
+  background-color: #b2cdff;
+  padding-top: 40px;
+  padding-bottom: 50px;
+ 
+}
+
+
+
+
 
 
 h1 {
 
-    font-family:  "Climate Crisis", sans-serif;
-    color: #3d210e;
-   }
+  font-family: "Climate Crisis", sans-serif;
+  color: #3d210e;
+}
+
+
+
+.bianco {
+
+ 
+  color: #ffffff;
+
+}
+
+.portfolio {
+  padding-bottom: 500px;
+
+}
+
+
+.cardsSwiper {
+  width: 320px;
+  height: 420px;
+  margin: 40px auto;
+}
+
+.cardsSwiper .swiper-slide {
+  background: #fff;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+@media (min-width: 992px) {
+  .cardsSwiper {
+    height: 620px;
+    width: 480px;
+    margin: 40px auto;
+  }
+}
+
+
+.progetti {
+  padding-bottom: 50px;
+ 
+  
+
+}
+
+.lavori {
+
+margin-bottom: 100px
+
+}
+  
+
+
+
+p{
+  font-family: "Outfit", sans-serif;
+}
+
+#imageModal img {
+    max-width: 60vw;   
+    max-height: 80vh;  
+    object-fit: contain;
+}
+
+#imageModal .btn-close {
+    z-index: 1056;
+    opacity: 0.9;
+}
+
+#imageModal .btn-close:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
+
+.splide {
+  width: 90%;       /* larghezza dello slider */
+  max-width: 1200px; /* non più largo di 1200px */
+  margin: 0 auto;    /* centrato */
+}
+
+.splide__slide img {
+  width: 100%;      /* l’immagine riempie la slide */
+  height: auto;     /* mantiene le proporzioni */
+  display: block;
+  border-radius: 10px;
+}
+
+
+.splide__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
