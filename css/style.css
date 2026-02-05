@@ -2,12 +2,9 @@ html {
   scroll-behavior: smooth;
 }
 
-
-
 .body {
   background-color: #eee7d1;
 }
-
 
 .form-label {
   font-family: "Outfit", sans-serif;
@@ -17,7 +14,6 @@ html {
 
 .placeholder {
   font-family: "Outfit", sans-serif;
-
 
 }
 
@@ -45,8 +41,9 @@ html {
 
 
 .pagina-contatti {
-  padding-top: clamp(100px, 0vh, 240px);
-  padding-left: 50px
+  padding-top: 80PX;
+ 
+  padding-bottom: 165px;
 }
 
 .presentazione {
@@ -55,6 +52,10 @@ html {
   padding-bottom: 200px;
 
 }
+.titolo-contatti {
+ 
+  padding-bottom: 20px;
+}
 
 .custom {
   width: 350px;
@@ -62,9 +63,19 @@ html {
 }
 
 .contattami {
-  font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+  
+  font-family: "Outfit", sans-serif;
+  color: #b2cdff;
+  
+  padding-bottom: 20px;
 
 }
+.numero {
+  font-family: "Outfit", sans-serif;
+  color: #3d210e;
+  
+}
+
 
 
 .title {
@@ -106,6 +117,16 @@ html {
  
 }
 
+
+.link {
+  color: #5a3e2b;          
+  
+  
+}
+.mail-link:hover {
+  color: #b2cdff;         
+  text-decoration: underline; 
+}
 
 
 
@@ -194,22 +215,50 @@ p{
 
 
 
-.splide {
-  width: 90%;       /* larghezza dello slider */
-  max-width: 1200px; /* non più largo di 1200px */
-  margin: 0 auto;    /* centrato */
+.splide__slide {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
 }
+
 
 .splide__slide img {
-  width: 100%;      /* l’immagine riempie la slide */
-  height: auto;     /* mantiene le proporzioni */
-  display: block;
-  border-radius: 10px;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  max-width: none !important;
 }
 
 
-.splide__slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+
+.carousel-item img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+.intro {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.bottone {
+  background-color: #5a3e2b;   /* colore principale */
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.bottone:hover {
+  background-color: #b2cdff;
+  color: #fff;
+  transform: translateY(-2px);
+}
+.scarica {
+  padding-bottom: 50px;
 }
