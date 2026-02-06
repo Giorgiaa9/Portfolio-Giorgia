@@ -185,6 +185,7 @@ h1 {
 
 }
 
+
 .lavori {
 
 margin-bottom: 100px
@@ -249,7 +250,7 @@ p{
 }
 
 .bottone {
-  background-color: #5a3e2b;   /* colore principale */
+  background-color: #5a3e2b;   
   color: #fff;
   border: none;
   padding: 12px 28px;
@@ -266,6 +267,29 @@ p{
   color: #fff;
   transform: translateY(-2px);
 }
+
+.bottone2 {
+  background-color: #b2cdff; 
+  border: none;
+  color: #ffffff;
+  border: none;
+  padding: 12px 28px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-bottom: 50px;
+}
+
+.bottone2:hover {
+  background-color: #8ea4ce;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+
 .scarica {
   padding-bottom: 50px;
 }
@@ -284,3 +308,28 @@ p{
   left: -40px; } 
 .carousel-control-next { 
   right: -40px; }
+
+
+
+ .griglia-progetti {
+ display: flex;
+ justify-content: center;
+ padding-bottom: 100px;
+ padding-left: 100px;
+}
+
+@media (max-width: 768px) {
+  .griglia-progetti {
+    padding-bottom: 50px;
+    padding-left: auto;
+    padding-right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .filter-button-group {
+    visibility: hidden;
+    height: 0;
+    margin: 0;
+  }
+}
