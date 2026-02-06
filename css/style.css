@@ -54,7 +54,7 @@ html {
 }
 .titolo-contatti {
  
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 
 .custom {
@@ -68,6 +68,7 @@ html {
   color: #b2cdff;
   
   padding-bottom: 20px;
+  padding-top: 50px;
 
 }
 .numero {
@@ -190,7 +191,10 @@ margin-bottom: 100px
 
 }
   
-
+.beige {
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
 
 
 p{
@@ -229,7 +233,10 @@ p{
 }
 
 
-
+.sitoweb{
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
 
 .carousel-item img {
   height: 100%;
@@ -251,7 +258,7 @@ p{
   letter-spacing: 0.08em;
   text-transform: uppercase;
   border-radius: 30px;
-  transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .bottone:hover {
@@ -262,3 +269,18 @@ p{
 .scarica {
   padding-bottom: 50px;
 }
+
+.padding-testo {
+  padding-bottom: 20px;
+
+}
+.carousel-control-prev, 
+.carousel-control-next { 
+  width: auto; opacity: 1; } 
+.carousel-control-prev-icon, 
+.carousel-control-next-icon { 
+  filter: invert(83%) sepia(12%) saturate(900%) hue-rotate(190deg); } 
+.carousel-control-prev { 
+  left: -40px; } 
+.carousel-control-next { 
+  right: -40px; }

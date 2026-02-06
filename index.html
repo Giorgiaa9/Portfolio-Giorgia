@@ -16,7 +16,7 @@
     href="https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=La+Belle+Aurore&family=Outfit:wght@100..900&display=swap"
     rel="stylesheet">
   <!-- Splide CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.2.7/dist/css/splide.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
   <style>
     .splide {
       width: 90%;
@@ -112,27 +112,54 @@
   </section>
 
 
- 
 
-    <section class="beige">
-  <div class="splide">
-    <div class="splide__track">
- <li class="splide__slide">
-  <img src="https://picsum.photos/600/600?random=1" alt="">
-</li>
-<li class="splide__slide">
-  <img src="https://picsum.photos/600/600?random=2" alt="">
-</li>
-<li class="splide__slide">
-  <img src="https://picsum.photos/600/600?random=3" alt="">
-</li>
-<li class="splide__slide">
-  <img src="https://picsum.photos/600/600?random=4" alt="">
-</li>
 
+  <section class="beige">
+      <h1 class="display-4 display-md-2 progetti text-center">PROGETTI</h1>
+    <div class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <a href="Brand manual.html">
+    <img src="img/progetti/schede card sito-09.png" alt="Progetto 1">
+  </a>
+          </li>
+        
+          <li class="splide__slide">
+            <a href="Sito web.html">
+              <img src="img/progetti/schede card sito-11.png" alt="Progetto 2">
+            </a>
+            
+          </li>
+          <li class="splide__slide">
+            <a href="Loghi.html">
+              <img src="img/progetti/schede card sito-12.png" alt="Progetto 3">
+            </a>
+            
+          </li>
+              <li class="splide__slide">
+                <a href="Packaging.html">
+                   <img src="img/progetti/schede card sito-13.png" alt="Progetto 4">
+                </a>
+            
+          </li>
+          <li class="splide__slide">
+            <a href="pagina-progetto1.html">
+              <img src="img/progetti/schede card sito-14.png" alt="Progetto 5">
+            </a>
+            
+          </li>
+          <li class="splide__slide">
+            <a href="Poster.html">
+              <img src="img/progetti/schede card sito-15.png" alt="Progetto 6">
+            </a>
+            
+          </li>
+          
+        </ul>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
@@ -141,7 +168,7 @@
 
 
 
- 
+
   <section>
 
     <footer>
@@ -199,21 +226,32 @@
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 
 
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.4.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
 
 
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    new Splide('.splide', {
-      type: 'loop',
-      perPage: 1,
-      gap: '1rem',
-    }).mount();
-  });
-</script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new Splide('.splide', {
+        type: 'loop',
+        perPage: 3,
+        gap: '1rem',
+     autoScroll : {
+      speed         : 1,       // velocità scorrimento
+      pauseOnHover  : false,   // non fermare al mouse
+      pauseOnFocus  : false,   // non fermare al focus
+      rewind        : false,   // <--- attenzione: NON deve essere true
+    },
+         drag: 'free',
+         arrows: false,
+        pagination: false,
+
+      }).mount(window.splide.Extensions);
+    });
+  </script>
 
 
 
