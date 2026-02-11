@@ -333,3 +333,22 @@ p{
     margin: 0;
   }
 }
+
+/* Flipbook custom styles - override basic.css */
+.flipbook-viewport {
+  height: 700px !important;
+  position: relative !important;
+  margin-bottom: 50px;
+}
+
+.flipbook-viewport .container {
+  position: relative !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+.titolo-libri {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
